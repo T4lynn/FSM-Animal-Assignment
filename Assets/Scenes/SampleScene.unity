@@ -122,6 +122,131 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &18876228
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 18876233}
+  - component: {fileID: 18876232}
+  - component: {fileID: 18876231}
+  - component: {fileID: 18876230}
+  - component: {fileID: 18876229}
+  m_Layer: 0
+  m_Name: Bed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &18876229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18876228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
+--- !u!65 &18876230
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18876228}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &18876231
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18876228}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &18876232
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18876228}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &18876233
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18876228}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.4290668, y: 0.6, z: 12.261808}
+  m_LocalScale: {x: 2, y: 0.2, z: 2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &490096936
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,7 +302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _serializedExposedParameters: []
-  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":0.318636,"g":0.8875045,"b":0.5054262,"a":1.0},"_name":"Sleep","_position":{"x":246.3396,"y":411.1698},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":0.6234093,"g":1.0,"b":0.2992168,"a":1.0},"_name":"Hunt","_position":{"x":366.7925,"y":168.4528},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":0.8524415,"g":1.0,"b":0.3215686,"a":1.0},"_name":"Wander","_position":{"x":67.01888,"y":236.3774},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"},{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":1.0,"g":0.7297904,"b":0.3215686,"a":1.0},"_name":"Bicker","_position":{"x":518.2727,"y":84.92338},"$type":"NodeCanvas.StateMachines.ActionState","$id":"3"},{"_nestedFSM":{"_value":1},"_name":"Prophesize","_position":{"x":420.3926,"y":515.221},"$type":"NodeCanvas.StateMachines.NestedFSMState","$id":"4"},{"_position":{"x":320.6227,"y":32.50944},"$type":"NodeCanvas.StateMachines.AnyState","$id":"5"},{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":0.9302243,"g":0.2624432,"b":0.4280855,"a":1.0},"_name":"Guard","_position":{"x":126.5849,"y":-21.01886},"$type":"NodeCanvas.StateMachines.ActionState","$id":"6"}],"connections":[{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.TimerCT"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.TimerCT"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.HalfChanceCT"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.TimerCT"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.TimerCT"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"fed":{"_name":"wyrmFed","_targetVariableID":"6f39c433-42b8-4d84-b1f2-050a3b6687ab"},"$type":"NodeCanvas.Tasks.Conditions.FedCT"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.TimerCT"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.TimerCT"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.TimerCT"},"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.onClickCT"},"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"6"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.TimerCT"},"_sourceNode":{"$ref":"6"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"$type":"NodeCanvas.Tasks.Actions.SleepAT"}]},"_color":{"r":0.318636,"g":0.8875045,"b":0.5054262,"a":1.0},"_name":"Sleep","_position":{"x":246.3396,"y":411.1698},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":0.6234093,"g":1.0,"b":0.2992168,"a":1.0},"_name":"Hunt","_position":{"x":366.7925,"y":168.4528},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":0.8524415,"g":1.0,"b":0.3215686,"a":1.0},"_name":"Wander","_position":{"x":67.01888,"y":236.3774},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"},{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":1.0,"g":0.7297904,"b":0.3215686,"a":1.0},"_name":"Bicker","_position":{"x":518.2727,"y":84.92338},"$type":"NodeCanvas.StateMachines.ActionState","$id":"3"},{"_nestedFSM":{"_value":1},"_name":"Prophesize","_position":{"x":420.3926,"y":515.221},"$type":"NodeCanvas.StateMachines.NestedFSMState","$id":"4"},{"_position":{"x":320.6227,"y":32.50944},"$type":"NodeCanvas.StateMachines.AnyState","$id":"5"},{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":0.9302243,"g":0.2624432,"b":0.4280855,"a":1.0},"_name":"Guard","_position":{"x":126.5849,"y":-21.01886},"$type":"NodeCanvas.StateMachines.ActionState","$id":"6"}],"connections":[{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.TimerCT"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.TimerCT"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.HalfChanceCT"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.TimerCT"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.TimerCT"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"fed":{"_name":"wyrmFed","_targetVariableID":"6f39c433-42b8-4d84-b1f2-050a3b6687ab"},"$type":"NodeCanvas.Tasks.Conditions.FedCT"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.TimerCT"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.TimerCT"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.TimerCT"},"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.onClickCT"},"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"6"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.TimerCT"},"_sourceNode":{"$ref":"6"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
   _boundGraphObjectReferences:
   - {fileID: 0}
   - {fileID: 11400000, guid: b8ab56d0983024c4c9a15b96356e3138, type: 2}
@@ -185,7 +310,7 @@ MonoBehaviour:
     _version: 3.31
     _category: 
     _comments: 
-    _translation: {x: 164.93604, y: 18.580727}
+    _translation: {x: 165, y: -26}
     _zoomFactor: 1
   _firstActivation: 0
   _enableAction: 0
@@ -321,7 +446,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &531236350
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -615,7 +740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popup: {fileID: 6710882173921613539, guid: 727ac2ec2cce7f34ea66242f73cdca35, type: 3}
-  locationObject: {fileID: 531236349}
+  locationObject: {fileID: 490096936}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,13 +826,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.5612628, y: -0, z: -0, w: 0.82763773}
+  m_LocalPosition: {x: 0, y: 22.58, z: -12.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 68.286, y: 0, z: 0}
 --- !u!1 &1295507401
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,7 +1084,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 99fc76a0491a1c344a049a346d94a23c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1017,3 +1142,4 @@ SceneRoots:
   - {fileID: 1936161298}
   - {fileID: 1295507403}
   - {fileID: 490096943}
+  - {fileID: 18876233}
