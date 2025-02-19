@@ -13,6 +13,9 @@ namespace NodeCanvas.Tasks.Actions {
 		public BBParameter<Transform> bedTran;
 		Vector3 bedPos;
 		public BBParameter<int> state;
+		private bool createdIcon;
+		public GameObject Icon;
+
         //Use for initialization. This is called only once in the lifetime of the task.
         //Return null if init was successfull. Return an error string otherwise
         protected override string OnInit() {
@@ -27,16 +30,28 @@ namespace NodeCanvas.Tasks.Actions {
 		protected override void OnExecute() {
 			state.value = 1;
 			navAgent.SetDestination(bedPos);
+			createdIcon = false;
 		}
 
 		//Called once per frame while the action is active.
 		protected override void OnUpdate() {
-			
+			if (!createdIcon)
+			{
+				Vector3 position = agent.transform.position;
+                if (position.x > bedPos.x - 0.5 && position.z > bedPos.z - 0.5)
+				{
+                  Icon.SetActive(true);
+					createdIcon = true;
+                }
+
+            }
 		}
 
 		//Called when the task is disabled.
 		protected override void OnStop() {
 			state.value = 0;
+			Icon.SetActive(false);
+			createdIcon = false ;
 		}
 
 		//Called when the task is paused.
