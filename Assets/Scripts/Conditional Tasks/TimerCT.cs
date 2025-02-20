@@ -11,14 +11,14 @@ namespace NodeCanvas.Tasks.Conditions {
 		//Use for initialization. This is called only once in the lifetime of the task.
 		//Return null if init was successfull. Return an error string otherwise
 		protected override string OnInit(){
-			timer = timeStart;
+			
 			return null;
 		}
 
 		//Called whenever the condition gets enabled.
 		protected override void OnEnable() {
-			
-		}
+            timer = timeStart;
+        }
 
 		//Called whenever the condition gets disabled.
 		protected override void OnDisable() {

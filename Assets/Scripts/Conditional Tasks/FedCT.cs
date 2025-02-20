@@ -6,7 +6,7 @@ using UnityEngine;
 namespace NodeCanvas.Tasks.Conditions {
 
 	public class FedCT : ConditionTask {
-		public BBParameter<bool> fed;
+		public BBParameter<bool> wyrmFed;
 
 		public float timer = 0;
 		public float timesUp = 5;
@@ -31,7 +31,7 @@ namespace NodeCanvas.Tasks.Conditions {
 		//Called once per frame while the condition is active.
 		//Return whether the condition is success or failure.
 		protected override bool OnCheck() {
-			if (fed.value == false)
+			if (wyrmFed.value == false)
 			{
 				if (timer >= timesUp)
 				{
