@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
+  m_Name: ProphesizeSubFSM
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"prophesizeIcon":1,"whisperSounds":2,"$type":"NodeCanvas.Tasks.Actions.ProphesizeAT"}]},"_color":{"r":0.6079361,"g":0.3668474,"b":0.9131363,"a":1.0},"_name":"Speak
+    in Tongues","_position":{"x":261.7359,"y":293.434},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"prophesizeIcon":1,"wyrmMat":3,"$type":"NodeCanvas.Tasks.Actions.flickerAT"}]},"_color":{"r":0.3037456,"g":0.1593498,"b":0.7764329,"a":1.0},"_name":"Flicker
+    out of reality","_position":{"x":477.2831,"y":370.4151},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_position":{"x":346.8679,"y":499.9245},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"}],"connections":[{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.RandomizeCT"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.RandomizeCT"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _objectReferences:
+  - {fileID: 0}
+  - {fileID: 4428876176196666641, guid: 59998c32c3b9b984fa17db7183612a8c, type: 3}
+  - {fileID: 4258165824102418826, guid: 1f4e0c46b909c964cba5159c4790ec3d, type: 3}
+  - {fileID: 2100000, guid: f9f3e0e053259624792df12233c926e7, type: 2}
+  _graphSource:
+    _version: 3.31
+    _category: 
+    _comments: 
+    _translation: {x: -6, y: -94}
+    _zoomFactor: 1
+  _haltSerialization: 0
+  _externalSerializationFile: {fileID: 0}
