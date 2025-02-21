@@ -10,9 +10,16 @@ namespace NodeCanvas.Tasks.Actions {
 		public GameObject prophesizeIcon;
 		Vector3 iconOffset = Vector3.one;
 
-		//Use for initialization. This is called only once in the lifetime of the task.
-		//Return null if init was successfull. Return an error string otherwise
-		protected override string OnInit() {
+		public GameObject whisperSounds;
+		public Vector3 bedpos = new(1.42f, 0.6f, 12.2f);
+
+		GameObject whisperSoundholder;
+		GameObject prophesizeIconHolder;
+		
+
+        //Use for initialization. This is called only once in the lifetime of the task.
+        //Return null if init was successfull. Return an error string otherwise
+        protected override string OnInit() {
 			return null;
 		}
 
@@ -20,17 +27,21 @@ namespace NodeCanvas.Tasks.Actions {
 		//Call EndAction() to mark the action as finished, either in success or failure.
 		//EndAction can be called from anywhere.
 		protected override void OnExecute() {
-			prophesizeIcon.SetActive(true);
+			prophesizeIconHolder =  GameObject.Instantiate(prophesizeIcon, bedpos + iconOffset, Camera.main.transform.rotation);
+			whisperSoundholder = GameObject.Instantiate(whisperSounds, iconOffset, Quaternion.identity) ;
 		}
 
 		//Called once per frame while the action is active.
 		protected override void OnUpdate() {
 			prophesizeIcon.transform.position = agent.transform.position + iconOffset;
+			 
 		}
 
 		//Called when the task is disabled.
 		protected override void OnStop() {
-			prophesizeIcon.SetActive(false);
+			
+			GameObject.Destroy(prophesizeIconHolder);
+			GameObject.Destroy(whisperSoundholder);
 		}
 
 		//Called when the task is paused.
